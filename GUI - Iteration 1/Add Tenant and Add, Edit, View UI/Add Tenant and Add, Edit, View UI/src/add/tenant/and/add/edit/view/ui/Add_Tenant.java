@@ -55,6 +55,7 @@ public class Add_Tenant extends javax.swing.JFrame {
         jScrollPane1 = new javax.swing.JScrollPane();
         AddressField = new javax.swing.JTextArea();
         SaveButton = new javax.swing.JButton();
+        Back_AddTenant = new javax.swing.JButton();
 
         FirstNameField1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -258,6 +259,13 @@ public class Add_Tenant extends javax.swing.JFrame {
 
         SaveButton.setText("Save");
 
+        Back_AddTenant.setText("Back");
+        Back_AddTenant.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                Back_AddTenantActionPerformed(evt);
+            }
+        });
+
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
@@ -267,7 +275,8 @@ public class Add_Tenant extends javax.swing.JFrame {
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(AddTenant, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                     .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                        .addGap(0, 0, Short.MAX_VALUE)
+                        .addComponent(Back_AddTenant)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                         .addComponent(SaveButton)))
                 .addContainerGap())
         );
@@ -277,7 +286,9 @@ public class Add_Tenant extends javax.swing.JFrame {
                 .addContainerGap()
                 .addComponent(AddTenant, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(SaveButton)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(SaveButton)
+                    .addComponent(Back_AddTenant))
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
@@ -324,6 +335,10 @@ public class Add_Tenant extends javax.swing.JFrame {
         // TODO add your handling code here:
     }//GEN-LAST:event_GuardianNoFIeldActionPerformed
 
+    private void Back_AddTenantActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Back_AddTenantActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_Back_AddTenantActionPerformed
+
     /**
      * @param args the command line arguments
      */
@@ -363,6 +378,7 @@ public class Add_Tenant extends javax.swing.JFrame {
     private javax.swing.JPanel AddTenant;
     private javax.swing.JTextArea AddressField;
     private javax.swing.JLabel AddressLabel;
+    private javax.swing.JButton Back_AddTenant;
     private javax.swing.JTextField ContactNoField;
     private javax.swing.JLabel ContactNoLabel;
     private javax.swing.JTextField DegreeField;

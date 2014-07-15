@@ -53,6 +53,7 @@ public class Add_Edit_View extends javax.swing.JFrame {
         GuardianNoData = new javax.swing.JLabel();
         EditButton = new javax.swing.JButton();
         DeleteButton = new javax.swing.JButton();
+        Back_AddEditView = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -226,6 +227,8 @@ public class Add_Edit_View extends javax.swing.JFrame {
             }
         });
 
+        Back_AddEditView.setText("Back");
+
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
@@ -235,7 +238,8 @@ public class Add_Edit_View extends javax.swing.JFrame {
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(AddEditView, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                     .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                        .addGap(0, 0, Short.MAX_VALUE)
+                        .addComponent(Back_AddEditView)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                         .addComponent(EditButton)
                         .addGap(10, 10, 10)
                         .addComponent(DeleteButton)))
@@ -249,7 +253,8 @@ public class Add_Edit_View extends javax.swing.JFrame {
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(EditButton)
-                    .addComponent(DeleteButton))
+                    .addComponent(DeleteButton)
+                    .addComponent(Back_AddEditView))
                 .addContainerGap())
         );
 
@@ -303,6 +308,7 @@ public class Add_Edit_View extends javax.swing.JFrame {
     private javax.swing.JPanel AddEditView;
     private javax.swing.JLabel AddressData;
     private javax.swing.JLabel AddressLabel1;
+    private javax.swing.JButton Back_AddEditView;
     private javax.swing.JLabel ContactNoData;
     private javax.swing.JLabel ContactNoLabel1;
     private javax.swing.JLabel DegreeData;
